@@ -1,18 +1,19 @@
 import './style.css';
-import { fetchFromAPI,writeToAPI } from './modules/interfaceAPI';
+import { fetchFromAPI, writeToAPI } from './modules/interfaceAPI.js';
+
 const refreshBtn = document.querySelector('#button-refresh');
 const inputForm = document.querySelector('#form-score-add');
 
-const init = () =>{
-  refreshBtn.onclick = () =>{
+const init = () => {
+  refreshBtn.onclick = () => {
     fetchFromAPI();
-  }
-  inputForm.onsubmit = (event) =>{
+  };
+  inputForm.onsubmit = (event) => {
     event.preventDefault();
     writeToAPI();
-  }
-}
-window.onload=()=>{
+  };
+};
+window.onload = () => {
   init();
   fetchFromAPI();
-}
+};

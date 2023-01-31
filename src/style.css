@@ -33,7 +33,6 @@ body {
 .score-table {
   width: 100%;
   text-align: left;
-
 }
 
 .section-score-add {
@@ -46,7 +45,7 @@ body {
   flex-direction: column;
 }
 
-#form-score-add>* {
+#form-score-add > * {
   padding: 1% 0;
   margin: 3% 0;
 }
@@ -66,7 +65,7 @@ body {
 }
 
 .red {
-  color: crimson; 
+  color: crimson;
 }
 
 .green {

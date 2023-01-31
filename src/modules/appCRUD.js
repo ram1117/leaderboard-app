@@ -11,33 +11,30 @@ export const showMessage = (msg, colorClass) => {
     msgElement.textContent = '';
     msgElement.classList.remove(colorClass);
   }, 1000);
-}
+};
 
-const validateScore = (value) => {
-  return value.match(/[0-9]/gi);
-}
+const validateScore = (value) => value.match(/[0-9]/gi);
 
 export const readFromForm = () => {
   if (validateScore(inputScore.value)) {
-    const newScore = {'user':inputName.value,'score':inputScore.value};
+    const newScore = { user: inputName.value, score: inputScore.value };
     inputForm.reset();
     return newScore;
   }
-  else{
-    showMessage('Please enter valid score', 'red');
-    return null;
-  }
-}
+
+  showMessage('Please enter valid score', 'red');
+  return null;
+};
 
 const removeExistingRows = () => {
   const scores = scoreTable.querySelectorAll('.data-row');
   for (let i = 0; i < scores.length; i += 1) {
     scoreTable.removeChild(scores[i]);
   }
-}
+};
 export const populateScoresTable = (arr) => {
   removeExistingRows();
-  arr.forEach(userObj => {
+  arr.forEach((userObj) => {
     const tr = document.createElement('tr');
     tr.classList.add('table-row', 'data-row');
     const tdName = document.createElement('td');
@@ -48,5 +45,4 @@ export const populateScoresTable = (arr) => {
     tr.appendChild(tdScore);
     scoreTable.appendChild(tr);
   });
-
-}
+};
