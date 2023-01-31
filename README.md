@@ -60,7 +60,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](To-be-updated)
+- [Live Demo Link](https://ram1117.github.io/leaderboard-app/dist)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

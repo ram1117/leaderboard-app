@@ -13,14 +13,22 @@
     <h1>Leaderboard</h1>
   </header>
   <div class="main-content">
-    <section class="score-display">
-      <div class="table-title">
+    <section class="section-score-display">
+      <div class="section-title">
         <h2>Recent scores</h2>
-        <button class="button-refresh">Refresh</button>
+        <button id="button-refresh" type="button">Refresh</button>
       </div>
-      <table class="score-table"></table>
+      <div class="table-wrapper">
+        <table class="score-table">
+          <tr class="table-row table-header">
+            <th>Player Name</th>
+            <th>Score</th>
+          </tr>
+        </table>
+      </div>
+
     </section>
-    <section class="score-add">
+    <section class="section-score-add">
       <h2>Add your score</h2>
       <form id="form-score-add" action="post">
         <label class="input-label" for="player-name">Your Name</label>
@@ -28,8 +36,8 @@
         <label for="player-score" class="input-label">Your Score</label>
         <input type="text" id="player-score" placeholder="Your score.." required>
         <button id="button-submit" type="submit">submit</button>
-
       </form>
+      <div class="error-msg2"></div>
     </section>
   </div>
 </body>
