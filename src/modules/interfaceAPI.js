@@ -1,6 +1,6 @@
 import { readFromForm, populateScoresTable, showMessage } from './appCRUD.js';
 
-const gameId = '/xAnLxnpCzCYPPY9fdvNC';
+const gameId = '/myB4aP7362UjeuVPdr2v';
 const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
 const scoreUrl = `${baseUrl}games${gameId}/scores/`;
 

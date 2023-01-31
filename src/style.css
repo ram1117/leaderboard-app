@@ -1,8 +1,21 @@
+@font-face {
+  font-family: retroGame;
+  src: url('../src/fonts/Retro Gaming.ttf');
+}
+
 body {
   padding: 5%;
-  margin: 0;
+  margin: 0 auto;
   box-sizing: border-box;
-  font-family: Lato, sans-serif;
+  font-family: retroGame, sans-serif;
+  background: #152238;
+  color: #fff;
+}
+
+.page-header > h1 {
+  font-size: 2.5em;
+  font-weight: 100;
+  text-align: center;
 }
 
 .main-content {
@@ -11,7 +24,7 @@ body {
 }
 
 .section-score-display {
-  padding: 5%;
+  margin: 0 auto;
   width: 80%;
 }
 
@@ -20,29 +33,45 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 5%;
 }
 
 .table-wrapper {
   width: 100%;
   height: 40vh;
-  padding: 3%;
-  border: solid 1px black;
+  border: solid 3px #fff;
+  border-radius: 20px;
   overflow-y: auto;
+  margin-bottom: 5%;
 }
 
 .score-table {
   width: 100%;
   text-align: left;
+  padding: 5%;
+}
+
+.table-header {
+  font-size: 1.5em;
+  height: 7vh;
+}
+
+.data-row {
+  font-size: 1.1em;
+  font-weight: 100;
+  height: 5vh;
 }
 
 .section-score-add {
-  padding: 5%;
+  width: 100%;
+  text-align: center;
 }
 
 #form-score-add {
   width: 60%;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 #form-score-add > * {
@@ -50,13 +79,43 @@ body {
   margin: 3% 0;
 }
 
+#form-score-add > input {
+  border: solid 5px #fff;
+  border-radius: 10px;
+  font-family: retroGame, sans-serif;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 100;
+}
+
 .input-label {
   display: none;
 }
 
+#button-refresh,
 #button-submit {
-  width: 30%;
+  border: solid 5px #fff;
+  background: #152238;
+  color: #fff;
+  font-size: 1.2em;
+  font-family: retroGame, sans-serif;
+}
+
+#button-refresh {
+  padding: 2%;
+}
+
+#button-submit {
+  padding: 2%;
+  width: 50%;
   align-self: flex-end;
+}
+
+#button-refresh:hover,
+#button-submit:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #152238;
 }
 
 .error-msg2 {
@@ -72,7 +131,13 @@ body {
   color: green;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
+  .page-header > h1 {
+    font-size: 3em;
+    font-weight: 100;
+    text-align: center;
+  }
+
   .main-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
