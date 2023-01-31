@@ -10,25 +10,33 @@ body {
   grid-template-columns: 1fr;
 }
 
-.score-display {
+.section-score-display {
   padding: 5%;
   width: 80%;
 }
 
-.table-title {
+.section-title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.score-table {
+.table-wrapper {
   width: 100%;
   height: 40vh;
+  padding: 3%;
   border: solid 1px black;
+  overflow-y: auto;
 }
 
-.score-add {
+.score-table {
+  width: 100%;
+  text-align: left;
+
+}
+
+.section-score-add {
   padding: 5%;
 }
 
@@ -38,7 +46,7 @@ body {
   flex-direction: column;
 }
 
-#form-score-add > * {
+#form-score-add>* {
   padding: 1% 0;
   margin: 3% 0;
 }
@@ -50,6 +58,19 @@ body {
 #button-submit {
   width: 30%;
   align-self: flex-end;
+}
+
+.error-msg2 {
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.red {
+  color: crimson; 
+}
+
+.green {
+  color: green;
 }
 
 @media screen and (min-width: 768px) {
