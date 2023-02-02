@@ -8,7 +8,7 @@ body {
   margin: 0 auto;
   box-sizing: border-box;
   font-family: retroGame, sans-serif;
-  background: #152238;
+  background: #060c16;
   color: #fff;
 }
 
@@ -51,6 +51,10 @@ body {
   padding: 5%;
 }
 
+.table-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
 .table-header {
   font-size: 1.5em;
   height: 7vh;
@@ -81,6 +85,8 @@ body {
 
 #form-score-add > input {
   border: solid 5px #fff;
+  background: #060c16;
+  color: #fff;
   border-radius: 10px;
   font-family: retroGame, sans-serif;
   text-align: center;
@@ -95,7 +101,7 @@ body {
 #button-refresh,
 #button-submit {
   border: solid 5px #fff;
-  background: #152238;
+  background: #060c16;
   color: #fff;
   font-size: 1.2em;
   font-family: retroGame, sans-serif;
@@ -115,7 +121,7 @@ body {
 #button-submit:hover {
   cursor: pointer;
   background: #fff;
-  color: #152238;
+  color: #060c16;
 }
 
 .error-msg2 {
