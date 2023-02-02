@@ -51,7 +51,7 @@ body {
   padding: 5%;
 }
 
-.table-wrapper::-webkit-scrollbar{
+.table-wrapper::-webkit-scrollbar {
   display: none;
 }
 
